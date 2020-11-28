@@ -1,0 +1,16 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{product.productname}}</mat-card-title>
+
+    </mat-card-header>
+    <img mat-card-image [src]="product.imagelink" alt="product image">
+    <mat-card-content>
+        <h1>
+            ${{product.price}}
+        </h1>
+    </mat-card-content>
+    <mat-card-actions>
+        <a mat-raised-button color="primary" (click)="openSnackBar()">Add to cart</a>
+    </mat-card-actions>
+</mat-card>

@@ -1,0 +1,28 @@
+kafka -messaging system
+kafka can only exist on a cluster-zookeeper
+apache hbase-also rely on zookeeper
+
+producers -> topic -> consumers
+
+
+start kafka
+
+1] place kafka in c drive 
+
+2] change the log.dirs to C:/kafka_2.12-2.6.0/kafka-logs in server.properties and change datadirs to C:/kafka_2.12-2.6.0/zookeeper-data
+
+3] start zookeeper .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+4] run kafka .\bin\windows\kafka-server-start.bat .\config\server.properties
+
+5] create topics .\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic CODA
+
+6] list topics .\bin\windows\kafka-topics.bat --list --zookeeper localhost:2181
+
+7] run producers .\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic CODA
+
+8] run consumers .\windows\kafka-console-consumer.bat --bootstrap-server  localhost:9092 --topic CODA
+
+
+
+

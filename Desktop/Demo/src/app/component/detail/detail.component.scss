@@ -1,0 +1,12 @@
+mat-card {
+    width: 250px;
+    height: 350px;
+    background: #a8ffff;
+    position: absolute;
+    top: 50%;
+    right: 38%;
+    transform: translate(0%, -50%);
+    img {
+        height: 180px;
+    }
+}

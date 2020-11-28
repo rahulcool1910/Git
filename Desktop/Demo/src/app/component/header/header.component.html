@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+    <span routerLink="">Shopiee</span>
+    <input type="text" [(ngModel)]="find" (ngModelChange)="search()" placeholder="Search..." class="searchbar">
+    <span class="example-spacer"></span>
+    <button mat-icon-button routerLink="cart">
+      <mat-icon [matBadge]="length" matBadgeColor="warn">shopping_cart</mat-icon>
+    </button>
+</mat-toolbar>

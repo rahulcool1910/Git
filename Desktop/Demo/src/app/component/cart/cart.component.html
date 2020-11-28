@@ -1,0 +1,11 @@
+<p *ngIf="products.length==0" class="nocontent">no item in cart</p>
+<mat-accordion displayMode="default" [multi]="false" [hideToggle]="false" *ngIf="products.length>0">
+    <mat-expansion-panel [hideToggle]="false" *ngFor="let product of products" class="panel">
+        <mat-expansion-panel-header>{{product.productname}}</mat-expansion-panel-header>
+        <img class="panel-img" [src]="product.imagelink" alt="product">
+        <p>${{product.price}}</p>
+        <mat-action-row>
+            <button mat-button (click)="remove(product)">remove item</button>
+        </mat-action-row>
+    </mat-expansion-panel>
+</mat-accordion>

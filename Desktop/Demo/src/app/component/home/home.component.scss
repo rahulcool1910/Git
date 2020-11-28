@@ -1,0 +1,17 @@
+main {
+    display: grid;
+    width: 100vw;
+    background: #ffe5d0;
+    grid-template-columns: repeat(auto-fit, minmax(294px, 1fr));
+    row-gap: 15px;
+    padding-top: 10px;
+}
+
+app-product {
+    display: grid;
+    width: 100vw;
+    background: #ffe5d0;
+    grid-template-columns: repeat(auto-fit, minmax(294px, 1fr));
+    row-gap: 15px;
+    padding-top: 10px;
+}
