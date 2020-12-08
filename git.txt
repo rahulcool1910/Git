@@ -1,6 +1,6 @@
-git config --global user.name="rahulcool1910"
+git config --global user.name="******"
 
-git config --global user.email="rahu17c105@rmkcet.ac.in"
+git config --global user.email="*****"
 
 git config --global diff.tool p4merge
 
