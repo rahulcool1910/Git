@@ -1,0 +1,84 @@
+git config --global user.name="rahulcool1910"
+
+git config --global user.email="rahu17c105@rmkcet.ac.in"
+
+git config --global diff.tool p4merge
+
+git config --global difftools.p4merge.path "C:/Program Files/Perforce/p4merge.exe"
+
+git config --global difftool.prompt false
+
+git config --global merge.tool p4merge
+
+git config --global mergetools.p4merge.path "C:/Program Files/Perforce/p4merge.exe"
+
+git config --global mergetool.prompt false
+
+git init . - initialize git repo
+
+track file:
+	git add <file>
+	git add . - add all files
+
+commit files after stagging them:
+	git commit -m "message"
+
+	git commit -am "message" - performsboth addig and 
+	commiting
+
+show previous commits:
+	git logs 	
+
+
+show all branches:
+
+	git branch
+
+Switch between branches:
+	git checkout <branch name>
+
+create new branch and switching to it:
+	git checkout -b <branch name>
+
+
+Show all the files in a branch:	
+	git ls-tree -r <branch name>
+
+Delete branch:
+	git branch -d <branch name>
+
+
+Add tags :
+	git tag <tag name> (soft tag)
+
+	git tag -a <tag name> <annotated tag>
+
+	git show tagname (show all details of the commit)
+
+
+git history	
+
+	git config --global alias.hist "log --oneline --graph --decorate --all"
+
+	git hist
+
+
+git restore
+
+	git restore <commit id> --soft
+
+
+git push -u origin <branch name>
+
+git fetch
+
+git pull
+	
+
+
+
+
+
+
+
+
