@@ -1,0 +1,18 @@
+change Appsetting.json.microsft="information";
+
+create databaseContext : DbContext with a constuctor;
+
+add a property of type DbSet<Entity Name> TableName(get,set);
+
+add Services in startup.cs with databaseContext....get options from appsettings.json.ConnectionStrings.defaultsString Data Source ="dbname.db"
+
+dotnet tool install --global dotnet-ef --version 5.0.1
+
+dotnet ef migrations add InitailCreate -o Data/Migrations
+
+dotnet ef database update
+
+
+
+
+
