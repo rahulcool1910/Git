@@ -55,6 +55,9 @@ Add tags :
 
 	git show tagname (show all details of the commit)
 
+SSH Authentication:
+	ssh-keygen -t rsa -C "email"
+	* Add the pu file to github 
 
 git history	
 
