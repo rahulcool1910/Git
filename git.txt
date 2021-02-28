@@ -48,6 +48,9 @@ Delete branch:
 	git branch -d <branch name>
 
 
+Get branch id:
+	git reflog
+
 Add tags :
 	git tag <tag name> (soft tag)
 
@@ -70,8 +73,9 @@ git restore
 
 	git restore <commit id> --soft
 
+push file to new branch:
 
-git push -u origin <branch name>
+	git push -u origin <branch name>
 
 git fetch
 
